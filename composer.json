@@ -1,0 +1,36 @@
+{
+    "name": "mujhtech/laravel-navtoastr",
+    "description": "PHP API Library for varspay service",
+    "keywords": ["laravel", "toastr", "php", "navigation", "redirection", "session", "library"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mujhtech",
+            "email": "mujeeb.muhideen@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": ">=6.0",
+        "php": ">=7.2.0",
+        "illuminate/support": "~6|~7|~8"
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers.php"
+          ],
+        "psr-4": {
+            "Mujhtech\\LaravelNavToastr\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mujhtech\\LaravelNavToastr\\NavToastrServiceProvider"
+            ],
+            "aliases": {
+                "LaravelNavToastr": "Mujhtech\\LaravelNavToastr\\Facades\\NavToastr"
+            }
+        }
+    }
+}
