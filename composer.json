@@ -20,16 +20,16 @@
             "src/Helpers.php"
           ],
         "psr-4": {
-            "Mujhtech\\LaravelNavToastr\\": "src/"
+            "Mujhtech\\NavToastr\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Mujhtech\\LaravelNavToastr\\NavToastrServiceProvider"
+                "Mujhtech\\NavToastr\\NavToastrServiceProvider"
             ],
             "aliases": {
-                "LaravelNavToastr": "Mujhtech\\LaravelNavToastr\\Facades\\NavToastr"
+                "NavToastr": "Mujhtech\\NavToastr\\Facades\\NavToastr"
             }
         }
     }

@@ -52,45 +52,69 @@ class NavToastr {
 
 
 
-
-
     public function show(): string
     {
-        $noti = '<script type="text/javascript">
-                    new Toast({ message: 'hi', type: 'success' });
-                </script>';
+        $noti = '<script type="text/javascript">'.$this->notificationsAsString().'</script>';
+
+        $this->session->forget(self::NAVTOASTR_NOTI);
 
         return $noti;
     }
 
-    public function error(string $message): self
-    {
-        return $this->addNotification(self::ERROR, $message);
-    }
 
-    public function info(string $message): self
+    public function notificationsAsString(): string
     {
-        return $this->addNotification(self::INFO, $message);
-    }
-
-    public function success(string $message): self
-    {
-        return $this->addNotification(self::SUCCESS, $message);
+        return implode('', array_slice($this->notifications(), -2));
     }
 
 
-    public function warning(string $message): self
+    public function notifications(): array
     {
-        return $this->addNotification(self::WARNING, $message);
+        return array_map(
+            function ($n) {
+                return $this->toast($n['type'], $n['message'], $n['enableCustomButton']);
+            },
+            $this->session->get(self::NAVTOASTR_NOTI, [])
+        );
     }
 
 
-    public function addNotification(string $type, string $message): self
+    public function toast(string $type, string $message = '', bool $enableCustomButton = false): string
+    {
+        $custombutton = $enableCustomButton ? $this->options() : '';
+
+        return "new Toast({ message: '$message', type: '$type', $custombutton });";
+    }
+
+
+    public function error(string $message, bool $enableCustomButton = false): self
+    {
+        return $this->addNotification(self::ERROR, $message, $enableCustomButton);
+    }
+
+    public function info(string $message, bool $enableCustomButton = false): self
+    {
+        return $this->addNotification(self::INFO, $message, $enableCustomButton);
+    }
+
+    public function success(string $message, bool $enableCustomButton = false): self
+    {
+        return $this->addNotification(self::SUCCESS, $message, $enableCustomButton);
+    }
+
+
+    public function warning(string $message, bool $enableCustomButton = false): self
+    {
+        return $this->addNotification(self::WARNING, $message, $enableCustomButton);
+    }
+
+
+    public function addNotification(string $type, string $message, bool $enableCustomButton = false): self
     {
         $this->notifications[] = [
             'type'    => in_array($type, $this->allowedTypes, true) ? $type : self::WARNING,
             'message' => $this->escapeSingleQuote($message),
-            'options' => json_encode($options),
+            'enableCustomButton' => $enableCustomButton,
         ];
 
         $this->session->flash(self::NAVTOASTR_NOTI, $this->notifications);
@@ -99,20 +123,51 @@ class NavToastr {
     }
 
 
-    public function to()
+    public function options(): string
     {
+
+        $option = array_map(
+            function ($n) {
+                if(array_key_exists('reload', $n) && $n['reload'] == true)
+                    return array(
+                        'text : '.$n['text'].',onClick : function(){window.location.reload();}'
+                    );
+                return array(
+                    'text : '.$n['text'].', onClick : function(){window.open("'.$n['url'].'");}'
+                );
+            },
+            $this->config->get('nav-toastr.custombuttons', [])
+        );
+
+
+        return 'customButtons : '.json_encode($option).'';
+    }
+
+
+    public function back()
+    {
+        return back();
+    }
+
+
+    public function to( string $url )
+    {
+        return redirect($url);
+    }
+
+
+    public function named( string $name )
+    {
+
+        return redirect()->route($name);
 
     }
 
 
-    public function named()
+    public function out( string $url )
     {
 
-    }
-
-
-    public function push()
-    {
+        return redirect()->away($url);
 
     }
 

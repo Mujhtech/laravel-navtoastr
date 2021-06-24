@@ -13,6 +13,15 @@
 
 return [
 
-
+    'custombuttons' => [
+        [
+            'text' => 'Refresh the page',
+            'reload' => true
+        ],
+        [
+            'text' => 'Refresh the page',
+            'url' => 'https://twitter.com/ireaderinokun'
+        ]
+    ]
     
 ];
