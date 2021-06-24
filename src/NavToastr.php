@@ -177,4 +177,9 @@ class NavToastr {
         return str_replace("'", "\\'", $value);
     }
 
+
+    public function clear() {
+        $this->notifications = [];
+    }
+
 }
