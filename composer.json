@@ -1,7 +1,7 @@
 {
-    "name": "mujhtech/laravel-navtoastr",
+    "name": "mujhtech/navtoastr",
     "description": "PHP API Library for varspay service",
-    "keywords": ["laravel", "toastr", "php", "navigation", "redirection", "session", "library"],
+    "keywords": ["laravel", "toastr", "php", "navigation", "redirection", "session", "route", "library"],
     "type": "library",
     "license": "MIT",
     "authors": [
