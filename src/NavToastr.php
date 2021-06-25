@@ -49,13 +49,6 @@ class NavToastr {
     protected $config;
 
     /**
-     * Limit the number of displayed toasts.
-     *
-     * @var int
-     */
-    protected $maxItems;
-
-    /**
      * Allowed toast types.
      *
      * @var array
@@ -79,8 +72,6 @@ class NavToastr {
         $this->config = $config;
 
         $this->notifications = $this->session->get(self::NAVTOASTR_NOTI, []);
-
-        $this->maxItems = $config->get('nav-toastr.maxItems', null);
 
     }
 
@@ -106,7 +97,7 @@ class NavToastr {
 
     public function notificationsAsString(): string
     {
-        return implode('', array_slice($this->notifications(), -$this->maxItems));
+        return implode('', array_slice($this->notifications(), 1));
     }
 
 
@@ -357,21 +348,6 @@ class NavToastr {
 
         return $this;
 
-    }
-
-
-    /**
-     * Limit the number of displayed toasts.
-     *
-     * @param int $max
-     *
-     * @return \Yoeunes\Toastr\Toastr
-     */
-    public function maxItems(int $max): self
-    {
-        $this->maxItems = $max;
-
-        return $this;
     }
 
 }

@@ -3,9 +3,15 @@
 
 if (! function_exists("navtoastr"))
 {
-    function navtoastr() {
+    function navtoastr(string $message = null, string $type = 'success', bool $enableCustomButton = false) {
 
-        return app()->make('nav-toastr');
+        if (is_null($message)) {
+
+            return app('nav-toastr');
+            
+        }
+
+        return app('nav-toastr')->addNotification($type, $message, $enableCustomButton);
     }
 }
 

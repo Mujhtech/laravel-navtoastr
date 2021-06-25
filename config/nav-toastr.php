@@ -34,13 +34,13 @@ return [
             'reload'    => true
         ],
         [
-            'text'      => 'Refresh the page',
-            'url'       => 'https://twitter.com/ireaderinokun'
+            'text'      => 'My Website',
+            'url'       => 'https://mujh.tech'
         ],
         [
-            'text'      => 'Refresh the page',
-            'url'       => 'https://twitter.com/ireaderinokun'
+            'text'      => 'Twitter',
+            'url'       => 'https://twitter.com/mujhtech'
         ]
-    ]
+    ],
     
 ];
