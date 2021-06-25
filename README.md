@@ -1,6 +1,6 @@
 <h1 align="center">NavToastr Notifications and Custom Redirection for Laravel App</h1>
 
-> <p align="center"><img src="https://res.cloudinary.com/mujhtech/image/upload/v1624611681/A_powerful_and_flexible_flash_notification_with_custom_redirection_xj88qd.png"></p>
+> <p align="center"><img src="https://res.cloudinary.com/mujhtech/image/upload/v1624612971/A_powerful_and_flexible_flash_notification_with_custom_redirection_ru5rz3.png"></p>
 
 
 <p align="center">:eyes: This package helps you to add <a href="https://github.com/ireade/Toast.js">Toast.js</a> notifications to your Laravel app</p>
