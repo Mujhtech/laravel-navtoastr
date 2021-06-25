@@ -97,7 +97,7 @@ class NavToastr {
 
     public function notificationsAsString(): string
     {
-        return implode('', array_slice($this->notifications(), 1));
+        return implode('', array_slice($this->notifications(), -1));
     }
 
 

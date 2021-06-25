@@ -1,24 +1,9 @@
-<h1 align="center">Toastr.js notifications for Laravel 5 and Lumen</h1>
+<h1 align="center">NavToastr Notifications and Custom Redirection for Laravel App</h1>
 
-> I'm working on a more advanced and more flexible solution for Laravel and Symfony, that include more drivers like : Tailwindcss, bootstrap, Noty, Sweet ALert, Notyf and Pnotify
-
-> I'm currently documenting all parts, but if you have time go check it here : https://php-flasher.github.io/
-> <p align="center"><img width="600" alt="flasher" src="https://user-images.githubusercontent.com/10859693/102468596-03317180-4052-11eb-9df3-44dc6235b238.png"></p>
+> <p align="center"><img src="https://res.cloudinary.com/mujhtech/image/upload/v1624611681/A_powerful_and_flexible_flash_notification_with_custom_redirection_xj88qd.png"></p>
 
 
-<p align="center">:eyes: This package helps you to add <a href="https://github.com/CodeSeven/toastr">toastr.js</a> notifications to your Laravel 5 and Lumen projects.</p>
-
-<p align="center">
-    <a href="https://packagist.org/packages/yoeunes/toastr"><img src="https://poser.pugx.org/yoeunes/toastr/v/stable" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/yoeunes/toastr"><img src="https://poser.pugx.org/yoeunes/toastr/v/unstable" alt="Latest Unstable Version"></a>
-    <a href="https://scrutinizer-ci.com/g/yoeunes/toastr/build-status/master"><img src="https://scrutinizer-ci.com/g/yoeunes/toastr/badges/build.png?b=master" alt="Build Status"></a>
-    <a href="https://scrutinizer-ci.com/g/yoeunes/toastr/?branch=master"><img src="https://scrutinizer-ci.com/g/yoeunes/toastr/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
-    <a href="https://scrutinizer-ci.com/g/yoeunes/toastr/?branch=master"><img src="https://scrutinizer-ci.com/g/yoeunes/toastr/badges/coverage.png?b=master" alt="Code Coverage"></a>
-    <a href="https://packagist.org/packages/yoeunes/toastr"><img src="https://poser.pugx.org/yoeunes/toastr/downloads" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/yoeunes/toastr"><img src="https://poser.pugx.org/yoeunes/toastr/license" alt="License"></a>
-</p>
-
-<p align="center"><img width="300" alt="toastr" src="https://user-images.githubusercontent.com/10859693/39634578-1a9f121a-4fb3-11e8-8863-d64fad42901b.png"></p>
+<p align="center">:eyes: This package helps you to add <a href="https://github.com/ireade/Toast.js">Toast.js</a> notifications to your Laravel app</p>
 
 ## Install
 
