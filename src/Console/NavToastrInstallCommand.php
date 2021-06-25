@@ -16,7 +16,7 @@ use Mujhtech\NavToastr\CommandHelper;
 
 class NavToastrInstallCommand extends Command {
 
-    protected $signature = 'navtoastr:install '.
+    protected $signature = 'nav-toastr:install '.
         '{--force : Overwrite existing views by default}'.
         '{--type= : Installation type, Available type: none, enhanced & full.}'.
         '{--only= : Install only specific part, Available parts: assets & config. This option can not used with the with option.}'.

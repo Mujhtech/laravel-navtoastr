@@ -1,5 +1,5 @@
 {
-    "name": "mujhtech/navtoastr",
+    "name": "mujhtech/nav-toastr",
     "description": "PHP API Library for varspay service",
     "keywords": ["laravel", "toastr", "php", "navigation", "redirection", "session", "route", "library"],
     "type": "library",
