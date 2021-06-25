@@ -13,14 +13,33 @@
 
 return [
 
+    // Limit the number of toast to display per time
+
+    'maxItems' => null,
+
+    /* 
+        
+        * Custom button settings
+        *
+        * $param array $custombuttons
+        * $param string $text
+        * $param string $url
+        * $param bool $reload 
+
+    */
+
     'custombuttons' => [
         [
-            'text' => 'Refresh the page',
-            'reload' => true
+            'text'      => 'Refresh the page',
+            'reload'    => true
         ],
         [
-            'text' => 'Refresh the page',
-            'url' => 'https://twitter.com/ireaderinokun'
+            'text'      => 'Refresh the page',
+            'url'       => 'https://twitter.com/ireaderinokun'
+        ],
+        [
+            'text'      => 'Refresh the page',
+            'url'       => 'https://twitter.com/ireaderinokun'
         ]
     ]
     
