@@ -1,13 +1,15 @@
 {
     "name": "mujhtech/nav-toastr",
-    "description": "PHP API Library for varspay service",
-    "keywords": ["laravel", "toastr", "php", "navigation", "redirection", "session", "route", "library"],
+    "description": "nav-toastr flash notification with custom redirection for laravel app",
+    "keywords": ["laravel", "toastr", "toast", "flast", "flash notification", "mujhtech", "php", "navigation", "redirection", "session", "route", "library"],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Mujhtech",
-            "email": "mujeeb.muhideen@gmail.com"
+            "email": "mujeeb.muhideen@gmail.com",
+            "homepage": "https://twitter.com/Mujhtech",
+            "role": "Developer",
         }
     ],
     "require": {
@@ -16,13 +18,15 @@
         "illuminate/support": "~6|~7|~8"
     },
     "autoload": {
-        "files": [
-            "src/Helpers.php"
-          ],
         "psr-4": {
             "Mujhtech\\NavToastr\\": "src/"
-        }
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
     },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [

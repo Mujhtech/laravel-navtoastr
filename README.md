@@ -6,6 +6,7 @@
 <p align="center">:eyes: This package helps you to add <a href="https://github.com/ireade/Toast.js">Toast.js</a> notifications to your Laravel app</p>
 
 
+
 ## Install
 
 You can install the package using composer
