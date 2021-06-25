@@ -7,13 +7,13 @@
 
 
 <p align="center">
-    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="https://poser.pugx.org/mujhtech/nav-toastr/v/stable" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="https://poser.pugx.org/mujhtech/nav-toastr/v/unstable" alt="Latest Unstable Version"></a>
+    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="http://poser.pugx.org/mujhtech/nav-toastr/v" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="http://poser.pugx.org/mujhtech/nav-toastr/v/unstable" alt="Latest Unstable Version"></a>
     <a href="https://scrutinizer-ci.com/g/Mujhtech/laravel-navtoastr/build-status/master"><img src="https://scrutinizer-ci.com/g/Mujhtech/laravel-navtoastr/badges/build.png?b=master" alt="Build Status"></a>
     <a href="https://scrutinizer-ci.com/g/Mujhtech/laravel-navtoastr/?branch=master"><img src="https://scrutinizer-ci.com/g/Mujhtech/laravel-navtoastr/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
     <a href="https://scrutinizer-ci.com/g/Mujhtech/laravel-navtoastr/?branch=master"><img src="https://scrutinizer-ci.com/g/Mujhtech/laravel-navtoastr/badges/coverage.png?b=master" alt="Code Coverage"></a>
-    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="https://poser.pugx.org/Mujhtech/laravel-navtoastr/downloads" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="https://poser.pugx.org/Mujhtech/laravel-navtoastr/license" alt="License"></a>
+    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="http://poser.pugx.org/mujhtech/nav-toastr/downloads" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="http://poser.pugx.org/mujhtech/nav-toastr/license" alt="License"></a>
 </p>
 
 
