@@ -6,6 +6,17 @@
 <p align="center">:eyes: This package helps you to add <a href="https://github.com/ireade/Toast.js">Toast.js</a> notifications to your Laravel app</p>
 
 
+<p align="center">
+    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="https://poser.pugx.org/mujhtech/nav-toastr/v/stable" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="https://poser.pugx.org/mujhtech/nav-toastr/v/unstable" alt="Latest Unstable Version"></a>
+    <a href="https://scrutinizer-ci.com/g/mujhtech/nav-toastr/build-status/master"><img src="https://scrutinizer-ci.com/g/mujhtech/nav-toastr/badges/build.png?b=master" alt="Build Status"></a>
+    <a href="https://scrutinizer-ci.com/g/mujhtech/nav-toastr/?branch=master"><img src="https://scrutinizer-ci.com/g/mujhtech/nav-toastr/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
+    <a href="https://scrutinizer-ci.com/g/mujhtech/nav-toastr/?branch=master"><img src="https://scrutinizer-ci.com/g/mujhtech/nav-toastr/badges/coverage.png?b=master" alt="Code Coverage"></a>
+    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="https://poser.pugx.org/mujhtech/nav-toastr/downloads" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/mujhtech/nav-toastr"><img src="https://poser.pugx.org/mujhtech/nav-toastr/license" alt="License"></a>
+</p>
+
+
 
 ## Install
 
